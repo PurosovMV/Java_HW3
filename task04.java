@@ -1,6 +1,8 @@
+/* *Реализовать алгоритм сортировки слиянием */
+
 public class task04 {
     public static void main(String[] args) {
-        int[] arr = {40, -1, 9, 22, 0, -70, 3, 661};
+        int[] arr = { 40, -1, 9, 22, 0, -70, 3, 661 };
         mergeSort(arr);
         for (int i = 0; i < arr.length; i++)
             System.out.print(arr[i] + " ");

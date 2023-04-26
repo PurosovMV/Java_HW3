@@ -1,14 +1,15 @@
 import java.util.*;
+/* Заполнить список названиями планет Солнечной системы в произвольном порядке с повторениями.
+Вывести название каждой планеты и количество его повторений в списке. */
 
-
-public class task03
-{
+public class task03 {
     public static void main(String[] args) {
-      printPlanets();
-      }
+        printPlanets();
+    }
+
     static void printPlanets() {
         Random random = new Random();
-        String[] list = {"Меркурий","Венера","Земля","Марс","Юпитер","Сатурн","Уран","Нептун"};
+        String[] list = { "Меркурий", "Венера", "Земля", "Марс", "Юпитер", "Сатурн", "Уран", "Нептун" };
         List<String> newList = new ArrayList<String>();
         for (int i = 0; i < list.length; i++) {
             newList.add(list[random.nextInt(list.length)]);
@@ -17,6 +18,6 @@ public class task03
         for (int i = 0; i < list.length; i++) {
             System.out.println(list[i] + " встречается " + Collections.frequency(newList, list[i]) + " раз(а)");
         }
-        
+
     }
 }
